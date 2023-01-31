@@ -10,11 +10,12 @@
                     version          : 'v15.0'
                 });
             };
-
-            FB.ui({
-                method: 'share',
-                href: 'https://developers.facebook.com/docs/'
+            document.getElementById('shareBtn').onclick = function() {
+                FB.ui({
+                    method: 'share',
+                    href: 'https://developers.facebook.com/docs/'
                 }, function(response){});
+            }
         </script>
 
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
@@ -31,6 +32,7 @@
                         <li>Create JS app/facebook app</li>
                         <li>Create react.js UI</li>
                 </ul>
+                <button id="shareBtn">Share</button>
         </body>
 </html>
 
