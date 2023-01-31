@@ -10,17 +10,18 @@
                     version          : 'v15.0'
                 });
 
+                document.getElementById('shareBtn').onclick = function() {
+                    FB.ui({
+                        method: 'share',
+                        href: 'https://developers.facebook.com/docs/'
+                }, function(response){});
+            }
                 // FB.ui({
                 //     method: 'share',
                 //     href: 'https://developers.facebook.com/docs/'
                 // }, function(response){});
             };
-            document.getElementById('shareBtn').onclick = function() {
-                FB.ui({
-                    method: 'share',
-                    href: 'https://developers.facebook.com/docs/'
-                }, function(response){});
-            }
+            
         </script>
 
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
