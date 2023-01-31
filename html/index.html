@@ -1,11 +1,25 @@
 <html>
-      	<head>
-              	<title>criedley.com</title>
+    <head>
+        <title>criedley.com</title>
+        <script>
+            window.fbAsyncInit = function() {
+                FB.init({
+                    appId            : 'your-app-id',
+                    autoLogAppEvents : true,
+                    xfbml            : true,
+                    version          : 'v15.0'
+                });
+            };
+        </script>
+
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
         </head>
+        
         <body>
               	<h1>Connection successful.</h1>
-		<h1>Git working.</h1>
+		       
                 <img src="https://cdn130.picsart.com/334082526042211.png">
+                
                 <h1>To Do: </h1>
                 <ul>
                         <li>Add portfolio items</li>
